@@ -1,0 +1,227 @@
+@font-face {
+	font-family: 'Gotham', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body {
+	padding: 0;
+	background-size: cover;
+	display: block;
+	position: relative;	
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Start of wrapper
+background-color: #161616bd; */
+#wrapper{
+	padding: 2%;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	backface-visibility: hidden;
+    animation-name: fadeInUp;
+    -webkit-animation-name: wrapper;
+	animation: slideBg 16s linear infinite 5s;
+	background-image: url(../images/image2.jpg);
+}
+/* End of wrapper */
+
+/* Start of header */
+header{
+	font-family: 'Gotham light';
+	min-height: 100px;
+	background-position: left;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	padding: 2em 10em;
+	/*border-bottom: 2px solid white;
+	border-top: 2px solid white;*/
+}
+header .container{
+	padding: 0% 10%;
+	
+}
+
+
+header p, header a {
+	font-family: 'Gotham light';
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-decoration: none;
+}
+/* End of header */
+
+hr{
+	color: #ffffff;
+}
+
+/* Start of nav */
+nav {
+	display: flex;
+	padding: 25px 0px 15px 0px;
+	justify-content: space-around;
+	color: #ffffff;
+	width: 100%;
+	border-bottom: 2px solid rgb(255, 255, 255);
+	margin: 20px 10px 0px 0px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 55%;
+	position: -webkit-sticky;
+	
+}
+
+nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav ul li a:hover, header a:hover{
+	color: #346751;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* End of nav */
+
+.overview {
+	font-family: 'Gotham light';
+	border-radius: 20px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	margin-top: 5em;
+}
+
+/* Start main */
+main{
+	overflow: auto;
+	min-height: 1280px;
+	padding: 100px;
+}
+
+main #content {
+	font-family: 'Gotham';
+	color: #ffffff;
+	display: flex;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid white;
+	background-color: #292929bd;
+}
+
+main #content #visi h2, main #content #misi h2{
+	text-align: center;
+}
+
+main #content > article {
+	padding: 20px;
+	flex: 50%;
+}
+
+/* End of main */
+
+@keyframes fadeIn {
+	from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes wrapper {
+	from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes slideBg{
+	
+	0% {
+		background-image: url(../images/image1.jpg);
+	}
+	0.1% {
+		background-image: url(../images/image1.jpg);
+	}
+	25% {
+		background-image: url(../images/image2.jpg);
+	}
+	25.1% {
+		background-image: url(../images/image2.jpg);
+	}
+	50% {
+		background-image: url(../images/image3.jpg);
+	}
+	50.1% {
+		background-image: url(../images/image3.jpg);
+	}
+	75% {
+		background-image: url(../images/image4.jpg);
+	}
+	75.1% {
+		background-image: url(../images/image4.jpg);
+	}
+	100% {
+		background-image: url(../images/image1.jpg);
+	}
+}
+
+button{
+	color: white;
+	background-color: #00b5fd5e;
+	width: 200px;
+}
+button:hover{
+	color: white;
+	background-color: #00b5fd;
+	width: 200px;
+	font-weight: bold;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.line{
+	display: flex;
+	padding: 10px;
+	margin-top: 4em;
+}
+
+.line > .line-left{
+	background-color: white;
+	border-radius: 20px;
+	height: 2px;
+	width: 15%;
+	flex: 20%;
+	margin: 0px 60px;
+}
+.line > .line-right{
+	background-color: white;
+	border-radius: 20px;
+	height: 2px;
+	width: 15%;
+	flex: 20%;
+	margin: 0px 60px;	
+}
